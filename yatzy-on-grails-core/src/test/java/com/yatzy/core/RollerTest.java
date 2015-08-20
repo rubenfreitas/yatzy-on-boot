@@ -1,4 +1,4 @@
-package com.yatzy.on.grails.core.roller;
+package com.yatzy.core;
 
 import org.junit.Test;
 
