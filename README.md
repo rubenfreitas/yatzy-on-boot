@@ -1,2 +1,5 @@
-# yatzy-on-grails
-Yatzy game implemented in Grails
+# yatzy-on-boot
+Yatzy game implemented in JAVA + Spring Boot
+
+## Quick Start
+.....
