@@ -6,6 +6,7 @@ import rf.yatzy.game.core.DiceHashMap;
 import rf.yatzy.game.core.config.RuleResult;
 import rf.yatzy.game.core.rules.config.Rule;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -22,6 +23,8 @@ public abstract class AbstractRuleTest extends AbstractIT {
 
     public abstract DiceHashMap getNotValidHash();
 
+    public abstract int getTotalSum();
+
     @Test
     public void shouldHaveValidCombination(){
         DiceHashMap diceHash = getValidHash();
@@ -30,6 +33,7 @@ public abstract class AbstractRuleTest extends AbstractIT {
 
         assertTrue(result.isValid());
         assertTrue(result.getSum() > ZERO_SUM);
+        assertEquals(result.getSum(), getTotalSum());
     }
 
     @Test

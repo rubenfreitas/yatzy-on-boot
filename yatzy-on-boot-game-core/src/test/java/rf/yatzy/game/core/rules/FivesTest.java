@@ -6,6 +6,7 @@ import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidFivesDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidFivesDiceHash;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.FIVES_SUM;
 
 /**
  * Created by rfreitas
@@ -28,5 +29,10 @@ public class FivesTest extends AbstractRuleTest {
     @Override
     public DiceHashMap getNotValidHash() {
         return testNotValidFivesDiceHash();
+    }
+
+    @Override
+    public int getTotalSum() {
+        return FIVES_SUM;
     }
 }

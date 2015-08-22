@@ -6,6 +6,7 @@ import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidOnesDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidOnesDiceHash;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.ONES_SUM;
 
 /**
  * Created by rfreitas
@@ -28,6 +29,11 @@ public class OnesTest extends AbstractRuleTest {
     @Override
     public DiceHashMap getNotValidHash() {
         return testNotValidOnesDiceHash();
+    }
+
+    @Override
+    public int getTotalSum() {
+        return ONES_SUM;
     }
 
 }

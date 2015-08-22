@@ -6,6 +6,7 @@ import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidTwosDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidTwosDiceHash;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.TWOS_SUM;
 
 /**
  * Created by rfreitas
@@ -28,5 +29,10 @@ public class TwosTest extends AbstractRuleTest {
     @Override
     public DiceHashMap getNotValidHash() {
         return testNotValidTwosDiceHash();
+    }
+
+    @Override
+    public int getTotalSum() {
+        return TWOS_SUM;
     }
 }
