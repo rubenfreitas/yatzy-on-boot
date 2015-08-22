@@ -10,18 +10,19 @@ import static java.lang.Boolean.TRUE;
 /**
  * Created by rfreitas
  */
-public class Pair extends AbstractLowerSection implements Rule {
+public class FourOfAKind extends AbstractLowerSection implements Rule {
 
     public RuleResult execute(DiceHash dice) {
         int[] faceOccurrences = countFacesOccurrences(new int[6], dice);
 
         int score = 0;
         for (int i = 6; i > 0; i--) {
-            if (faceOccurrences[i - 1] >= 2)
-                score = (i * 2);
+            if (faceOccurrences[i - 1] >= 4) {
+                score = (i * 4);
+            }
         }
 
-        return new RuleResult((score == 0) ? FALSE : TRUE,  score);
+        return new RuleResult(score == 0 ? FALSE : TRUE, score);
     }
 
 }

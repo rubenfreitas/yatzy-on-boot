@@ -1,12 +1,12 @@
 package rf.yatzy.game.core.rules;
 
 import org.mockito.InjectMocks;
-import rf.yatzy.game.core.DiceHashMap;
+import rf.yatzy.game.core.DiceHash;
 import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidTwosDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidTwosDiceHash;
-import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.TWOS_SUM;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.TWOS_SCORE;
 
 /**
  * Created by rfreitas
@@ -22,17 +22,17 @@ public class TwosTest extends AbstractRuleTest {
     }
 
     @Override
-    public DiceHashMap getValidHash() {
+    public DiceHash getValidHash() {
         return testValidTwosDiceHash();
     }
 
     @Override
-    public DiceHashMap getNotValidHash() {
+    public DiceHash getNotValidHash() {
         return testNotValidTwosDiceHash();
     }
 
     @Override
     public int getTotalSum() {
-        return TWOS_SUM;
+        return TWOS_SCORE;
     }
 }

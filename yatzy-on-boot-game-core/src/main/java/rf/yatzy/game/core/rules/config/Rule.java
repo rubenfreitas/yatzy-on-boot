@@ -1,6 +1,6 @@
 package rf.yatzy.game.core.rules.config;
 
-import rf.yatzy.game.core.DiceHashMap;
+import rf.yatzy.game.core.DiceHash;
 import rf.yatzy.game.core.config.RuleResult;
 
 /**
@@ -8,5 +8,5 @@ import rf.yatzy.game.core.config.RuleResult;
  */
 public interface Rule {
 
-    RuleResult execute(DiceHashMap dice);
+    RuleResult execute(DiceHash dice);
 }

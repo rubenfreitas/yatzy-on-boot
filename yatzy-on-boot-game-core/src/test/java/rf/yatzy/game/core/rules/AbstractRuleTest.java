@@ -2,7 +2,7 @@ package rf.yatzy.game.core.rules;
 
 import org.junit.Test;
 import rf.yatzy.game.core.AbstractIT;
-import rf.yatzy.game.core.DiceHashMap;
+import rf.yatzy.game.core.DiceHash;
 import rf.yatzy.game.core.config.RuleResult;
 import rf.yatzy.game.core.rules.config.Rule;
 
@@ -19,31 +19,31 @@ public abstract class AbstractRuleTest extends AbstractIT {
 
     public abstract Rule getRule();
 
-    public abstract DiceHashMap getValidHash();
+    public abstract DiceHash getValidHash();
 
-    public abstract DiceHashMap getNotValidHash();
+    public abstract DiceHash getNotValidHash();
 
     public abstract int getTotalSum();
 
     @Test
     public void shouldHaveValidCombination(){
-        DiceHashMap diceHash = getValidHash();
+        DiceHash diceHash = getValidHash();
 
         RuleResult result = getRule().execute(diceHash);
 
         assertTrue(result.isValid());
-        assertTrue(result.getSum() > ZERO_SUM);
-        assertEquals(result.getSum(), getTotalSum());
+        assertTrue(result.getScore() > ZERO_SUM);
+        assertEquals(result.getScore(), getTotalSum());
     }
 
     @Test
     public void shouldNotHaveValidCombination(){
-        DiceHashMap diceHash = getNotValidHash();
+        DiceHash diceHash = getNotValidHash();
 
         RuleResult result = getRule().execute(diceHash);
 
         assertFalse(result.isValid());
-        assertTrue(result.getSum() == ZERO_SUM);
+        assertTrue(result.getScore() == ZERO_SUM);
     }
 
 

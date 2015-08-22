@@ -1,12 +1,12 @@
 package rf.yatzy.game.core.rules;
 
 import org.mockito.InjectMocks;
-import rf.yatzy.game.core.DiceHashMap;
+import rf.yatzy.game.core.DiceHash;
 import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidThreesDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidThreesDiceHash;
-import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.THREES_SUM;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.THREES_SCORE;
 
 /**
  * Created by rfreitas
@@ -22,17 +22,17 @@ public class ThreesTest extends AbstractRuleTest {
     }
 
     @Override
-    public DiceHashMap getValidHash() {
+    public DiceHash getValidHash() {
         return testValidThreesDiceHash();
     }
 
     @Override
-    public DiceHashMap getNotValidHash() {
+    public DiceHash getNotValidHash() {
         return testNotValidThreesDiceHash();
     }
 
     @Override
     public int getTotalSum() {
-        return THREES_SUM;
+        return THREES_SCORE;
     }
 }

@@ -1,12 +1,12 @@
 package rf.yatzy.game.core.rules;
 
 import org.mockito.InjectMocks;
-import rf.yatzy.game.core.DiceHashMap;
+import rf.yatzy.game.core.DiceHash;
 import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidFivesDiceHash;
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidFivesDiceHash;
-import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.FIVES_SUM;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.FIVES_SCORE;
 
 /**
  * Created by rfreitas
@@ -22,17 +22,17 @@ public class FivesTest extends AbstractRuleTest {
     }
 
     @Override
-    public DiceHashMap getValidHash() {
+    public DiceHash getValidHash() {
         return testValidFivesDiceHash();
     }
 
     @Override
-    public DiceHashMap getNotValidHash() {
+    public DiceHash getNotValidHash() {
         return testNotValidFivesDiceHash();
     }
 
     @Override
     public int getTotalSum() {
-        return FIVES_SUM;
+        return FIVES_SCORE;
     }
 }

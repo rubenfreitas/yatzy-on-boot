@@ -5,9 +5,9 @@ import java.util.HashMap;
 /**
  * Created by rfreitas
  */
-public class DiceHashMap extends HashMap<Integer, Die> {
+public class DiceHash extends HashMap<Integer, Die> {
 
-    public DiceHashMap(HashMap<Integer, Die> diceHash) {
+    public DiceHash(HashMap<Integer, Die> diceHash) {
         super.putAll(diceHash);
     }
 

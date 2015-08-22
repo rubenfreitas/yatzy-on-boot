@@ -6,17 +6,17 @@ package rf.yatzy.game.core.config;
 public class RuleResult {
 
     private Boolean isValid;
-    private int sum;
+    private int score;
 
-    public RuleResult(Boolean isValid, int sum) {
+    public RuleResult(Boolean isValid, int score) {
         this.isValid = isValid;
-        this.sum = sum;
+        this.score = score;
     }
 
     public Boolean isValid() {
         return isValid;
     }
 
-    public int getSum() { return sum; }
+    public int getScore() { return score; }
 
 }
