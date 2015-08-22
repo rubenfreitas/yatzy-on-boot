@@ -9,7 +9,7 @@ import static rf.yatzy.game.core.rules.config.RulesConstants.TWOS_VALUE;
 /**
  * Created by rfreitas
  */
-public class Twos extends UpperSection implements Rule {
+public class Twos extends AbstractUpperSection implements Rule {
 
     public RuleResult execute(DiceHashMap dice) {
         return calculateUpper(dice, TWOS_VALUE);

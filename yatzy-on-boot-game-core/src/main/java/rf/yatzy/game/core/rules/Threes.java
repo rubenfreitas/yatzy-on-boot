@@ -9,7 +9,7 @@ import static rf.yatzy.game.core.rules.config.RulesConstants.THREES_VALUE;
 /**
  * Created by rfreitas
  */
-public class Threes extends UpperSection implements Rule {
+public class Threes extends AbstractUpperSection implements Rule {
 
     public RuleResult execute(DiceHashMap dice) {
         return calculateUpper(dice, THREES_VALUE);

@@ -17,15 +17,6 @@ public class RuleResult {
         return isValid;
     }
 
-    public void setIsValid(Boolean isValid) {
-        this.isValid = isValid;
-    }
+    public int getSum() { return sum; }
 
-    public int getSum() {
-        return sum;
-    }
-
-    public void setSum(int sum) {
-        this.sum = sum;
-    }
 }

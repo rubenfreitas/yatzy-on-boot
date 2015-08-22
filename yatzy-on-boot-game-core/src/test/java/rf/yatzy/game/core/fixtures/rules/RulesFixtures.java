@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.*;
 
+
 /**
  * Created by rfreitas
  */
@@ -59,6 +60,10 @@ public abstract class RulesFixtures {
 
     public static DiceHashMap testNotValidSixesDiceHash(){
         return new DiceHashMap(testDiceHash(NOT_VALID_SIXES_TEST));
+    }
+
+    public static DiceHashMap testChanceDiceHash(){
+        return new DiceHashMap(testDiceHash(CHANCE_TEST));
     }
 
     private static HashMap<Integer,Die> testDiceHash(int[] diceFaceValues) {

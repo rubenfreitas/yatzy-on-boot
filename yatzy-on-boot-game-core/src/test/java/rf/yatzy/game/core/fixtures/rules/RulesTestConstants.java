@@ -28,4 +28,7 @@ public interface RulesTestConstants {
     int[] VALID_SIXES_TEST = { 1, 6, 5, 6, 1, 1 };
     int[] NOT_VALID_SIXES_TEST = { 1, 4, 5, 3, 3, 5 };
     int SIXES_SUM = 12;
+
+    int[] CHANCE_TEST = { 1, 2, 3, 4, 5, 6 };
+    int CHANGE_SUM = 21;
 }
