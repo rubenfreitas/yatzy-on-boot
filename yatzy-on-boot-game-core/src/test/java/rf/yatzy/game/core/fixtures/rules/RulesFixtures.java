@@ -9,6 +9,7 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.CHANCE_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FIVES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FOURS_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FOUR_OF_A_KIND_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FULL_HOUSE_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_LARGE_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_ONES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_PAIR_TEST;
@@ -22,6 +23,7 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_YAT
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FIVES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FOURS_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FOUR_OF_A_KIND_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FULL_HOUSE_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_LARGE_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_ONES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_PAIR_TEST;
@@ -121,9 +123,9 @@ public abstract class RulesFixtures {
 
     public static DiceHash testNotValidLargeStraightDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_LARGE_STRAIGHT_TEST)); }
 
-    public static DiceHash testValidFullHouseDiceHash() { return new DiceHash(testDiceHash(VALID_LARGE_STRAIGHT_TEST)); }
+    public static DiceHash testValidFullHouseDiceHash() { return new DiceHash(testDiceHash(VALID_FULL_HOUSE_TEST)); }
 
-    public static DiceHash testNotValidFullHouseDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_LARGE_STRAIGHT_TEST)); }
+    public static DiceHash testNotValidFullHouseDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_FULL_HOUSE_TEST)); }
 
     private static HashMap<Integer,Die> testDiceHash(int[] diceFaceValues) {
         HashMap<Integer, Die> diceHash = new HashMap<Integer, Die>();

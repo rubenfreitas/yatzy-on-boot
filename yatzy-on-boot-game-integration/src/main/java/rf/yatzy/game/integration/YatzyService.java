@@ -1,4 +1,4 @@
-package rf.yatzy.game.service;
+package rf.yatzy.game.integration;
 
 import org.springframework.stereotype.Service;
 

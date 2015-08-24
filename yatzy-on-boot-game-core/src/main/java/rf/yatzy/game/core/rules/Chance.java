@@ -12,7 +12,7 @@ import static java.lang.Boolean.TRUE;
  * Created by rfreitas
  */
 @Component
-public class Change implements Rule {
+public class Chance implements Rule {
 
     public RuleResult execute(DiceHash dice) {
         int sum = 0;

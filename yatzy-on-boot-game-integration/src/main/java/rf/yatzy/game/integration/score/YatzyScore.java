@@ -1,4 +1,4 @@
-package rf.yatzy.game.service.score;
+package rf.yatzy.game.integration.score;
 
 /**
  * Created by rfreitas
@@ -7,6 +7,11 @@ public class YatzyScore {
 
     private boolean isSet;
     private int score;
+
+    public YatzyScore(){
+        this.isSet = false;
+        this.score = 0;
+    }
 
     public boolean isSet() {
         return isSet;

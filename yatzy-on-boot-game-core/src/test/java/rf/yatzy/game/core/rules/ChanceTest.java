@@ -17,10 +17,10 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.CHANGE_SCORE;
 /**
  * Created by rfreitas
  */
-public class ChangeTest extends AbstractIT {
+public class ChanceTest extends AbstractIT {
 
     @Spy
-    private Change chanceRule;
+    private Chance chanceRule;
 
     @Test
     public void shouldReturnValidChangeSum(){
