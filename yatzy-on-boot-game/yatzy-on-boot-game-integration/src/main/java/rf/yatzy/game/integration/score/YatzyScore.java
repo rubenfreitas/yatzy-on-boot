@@ -5,20 +5,20 @@ package rf.yatzy.game.integration.score;
  */
 public class YatzyScore {
 
-    private boolean isSet;
+    private boolean isLocked;
     private int score;
 
     public YatzyScore(){
-        this.isSet = false;
+        this.isLocked = false;
         this.score = 0;
     }
 
-    public boolean isSet() {
-        return isSet;
+    public boolean isLocked() {
+        return isLocked;
     }
 
-    public void setIsSet(boolean isSet) {
-        this.isSet = isSet;
+    public void setLocked() {
+        this.isLocked = true;
     }
 
     public int getScore() {

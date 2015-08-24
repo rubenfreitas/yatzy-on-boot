@@ -6,6 +6,9 @@
 	<groupId>rf.yatzy</groupId>
 	<artifactId>yatzy-on-boot-webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>../yatzy-on-boot-game/yatzy-on-boot-parent</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yatzy-on-boot</name>
