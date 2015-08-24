@@ -1,7 +1,7 @@
 package rf.yatzy.game.core.fixtures.rules;
 
-import rf.yatzy.game.core.DiceHash;
-import rf.yatzy.game.core.Die;
+import rf.yatzy.game.core.components.DiceHash;
+import rf.yatzy.game.core.components.Die;
 
 import java.util.HashMap;
 
@@ -9,9 +9,11 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.CHANCE_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FIVES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FOURS_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_FOUR_OF_A_KIND_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_LARGE_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_ONES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_PAIR_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_SIXES_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_SMALL_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_THREES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_THREE_OF_A_KIND_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_TWOS_TEST;
@@ -20,9 +22,11 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.NOT_VALID_YAT
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FIVES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FOURS_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_FOUR_OF_A_KIND_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_LARGE_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_ONES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_PAIR_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_SIXES_TEST;
+import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_SMALL_STRAIGHT_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_THREES_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_THREE_OF_A_KIND_TEST;
 import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_TWOS_TEST;
@@ -34,6 +38,8 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.VALID_YATZY_T
  * Created by rfreitas
  */
 public abstract class RulesFixtures {
+
+    public static DiceHash testWithCustomDiceHash(int[] customHash) { return new DiceHash(testDiceHash(customHash)); }
 
     public static DiceHash testValidOnesDiceHash(){
         return new DiceHash(testDiceHash(VALID_ONES_TEST));
@@ -106,6 +112,18 @@ public abstract class RulesFixtures {
     public static DiceHash testValidFourOfAKindDiceHash() { return new DiceHash(testDiceHash(VALID_FOUR_OF_A_KIND_TEST)); }
 
     public static DiceHash testNotValidFourOfAKindDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_FOUR_OF_A_KIND_TEST)); }
+
+    public static DiceHash testValidSmallStraightDiceHash() { return new DiceHash(testDiceHash(VALID_SMALL_STRAIGHT_TEST)); }
+
+    public static DiceHash testNotValidSmallStraightDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_SMALL_STRAIGHT_TEST)); }
+
+    public static DiceHash testValidLargeStraightDiceHash() { return new DiceHash(testDiceHash(VALID_LARGE_STRAIGHT_TEST)); }
+
+    public static DiceHash testNotValidLargeStraightDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_LARGE_STRAIGHT_TEST)); }
+
+    public static DiceHash testValidFullHouseDiceHash() { return new DiceHash(testDiceHash(VALID_LARGE_STRAIGHT_TEST)); }
+
+    public static DiceHash testNotValidFullHouseDiceHash() { return new DiceHash(testDiceHash(NOT_VALID_LARGE_STRAIGHT_TEST)); }
 
     private static HashMap<Integer,Die> testDiceHash(int[] diceFaceValues) {
         HashMap<Integer, Die> diceHash = new HashMap<Integer, Die>();

@@ -1,6 +1,6 @@
 package rf.yatzy.game.core.rules;
 
-import rf.yatzy.game.core.Die;
+import rf.yatzy.game.core.components.Die;
 import rf.yatzy.game.core.config.RuleResult;
 
 import java.util.HashMap;

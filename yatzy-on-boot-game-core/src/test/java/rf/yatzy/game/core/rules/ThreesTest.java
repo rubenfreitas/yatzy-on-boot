@@ -1,7 +1,7 @@
 package rf.yatzy.game.core.rules;
 
-import org.mockito.InjectMocks;
-import rf.yatzy.game.core.DiceHash;
+import org.mockito.Spy;
+import rf.yatzy.game.core.components.DiceHash;
 import rf.yatzy.game.core.rules.config.Rule;
 
 import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testNotValidThreesDiceHash;
@@ -13,7 +13,7 @@ import static rf.yatzy.game.core.fixtures.rules.RulesTestConstants.THREES_SCORE;
  */
 public class ThreesTest extends AbstractRuleTest {
 
-    @InjectMocks
+    @Spy
     private Threes threesRule;
 
     @Override

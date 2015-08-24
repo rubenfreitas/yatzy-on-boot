@@ -1,7 +1,7 @@
 package rf.yatzy.game.core.rules;
 
-import rf.yatzy.game.core.DiceHash;
-import rf.yatzy.game.core.Die;
+import rf.yatzy.game.core.components.DiceHash;
+import rf.yatzy.game.core.components.Die;
 
 /**
  * Created by rfreitas
@@ -14,4 +14,5 @@ public abstract class AbstractLowerSection {
         }
         return faceOccurrences;
     }
+
 }

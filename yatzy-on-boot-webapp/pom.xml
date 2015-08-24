@@ -27,7 +27,7 @@
 		<!-- YATZY DEPENDENCIES -->
 		<dependency>
 			<groupId>rf.yatzy</groupId>
-			<artifactId>yatzy-on-boot-game-core</artifactId>
+			<artifactId>yatzy-on-boot-game-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 

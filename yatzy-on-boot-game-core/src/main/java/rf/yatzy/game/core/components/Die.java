@@ -1,4 +1,4 @@
-package rf.yatzy.game.core;
+package rf.yatzy.game.core.components;
 
 /**
  * Created by rfreitas

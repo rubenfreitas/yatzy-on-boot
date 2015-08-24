@@ -52,4 +52,17 @@ public interface RulesTestConstants {
     int[] NOT_VALID_YATZY_TEST = { 1, 6, 3, 4, 6 };
     int YATZY_SCORE = 50;
 
+    int[] VALID_SMALL_STRAIGHT_TEST = { 5, 1, 2, 3, 4 };
+    int[] NOT_VALID_SMALL_STRAIGHT_TEST = { 1, 6, 3, 4, 6 };
+    int SMALL_STRAIGHT_SCORE = 15;
+
+    int[] VALID_LARGE_STRAIGHT_TEST = { 2, 6, 3, 4, 5 };
+    int[] NOT_VALID_LARGE_STRAIGHT_TEST = { 1, 6, 3, 4, 6 };
+    int LARGE_STRAIGHT_SCORE = 20;
+
+    int[] VALID_FULL_HOUSE_TEST = { 2, 6, 2, 6, 6 };
+    int[] NOT_VALID_FULL_HOUSE_TEST = { 1, 6, 6, 4, 6 };
+    int FULL_HOUSE_SCORE = 22;
+
+
 }

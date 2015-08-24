@@ -1,6 +1,7 @@
 package rf.yatzy.game.core.rules;
 
-import rf.yatzy.game.core.DiceHash;
+import org.springframework.stereotype.Component;
+import rf.yatzy.game.core.components.DiceHash;
 import rf.yatzy.game.core.config.RuleResult;
 import rf.yatzy.game.core.rules.config.Rule;
 
@@ -10,6 +11,7 @@ import static java.lang.Boolean.TRUE;
 /**
  * Created by rfreitas
  */
+@Component
 public class Pair extends AbstractLowerSection implements Rule {
 
     public RuleResult execute(DiceHash dice) {
@@ -21,7 +23,7 @@ public class Pair extends AbstractLowerSection implements Rule {
                 score = (i * 2);
         }
 
-        return new RuleResult((score == 0) ? FALSE : TRUE,  score);
+        return new RuleResult((score > 0) ? TRUE : FALSE,  score);
     }
 
 }

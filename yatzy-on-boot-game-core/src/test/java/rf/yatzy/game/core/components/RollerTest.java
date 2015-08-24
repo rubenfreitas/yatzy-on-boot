@@ -1,7 +1,8 @@
-package rf.yatzy.game.core;
+package rf.yatzy.game.core.components;
 
 import org.junit.Test;
 import org.mockito.InjectMocks;
+import rf.yatzy.game.core.AbstractIT;
 
 import static org.junit.Assert.assertTrue;
 
