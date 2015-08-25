@@ -11,9 +11,9 @@ import static java.lang.Boolean.TRUE;
 /**
  * Created by rfreitas
  */
-public abstract class AbstractUpperSection {
+abstract class AbstractUpperSection {
 
-    public static RuleResult calculateUpper(HashMap<Integer, Die> dice, int value){
+    protected static RuleResult calculateUpper(HashMap<Integer, Die> dice, int value){
         int sum = 0;
         for (Die die : dice.values()) {
             if (die.getFaceValue() == value) { sum += value; }

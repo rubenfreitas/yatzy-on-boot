@@ -56,8 +56,6 @@ public class FullHouseTest extends AbstractIT {
 
     @After
     public void checkCalls(){
-        verify(pairRule).execute(any(DiceHash.class));
-        verify(threeOfAKindRule).execute(any(DiceHash.class));
         verify(fullHouseRule).execute(any(DiceHash.class));
     }
 

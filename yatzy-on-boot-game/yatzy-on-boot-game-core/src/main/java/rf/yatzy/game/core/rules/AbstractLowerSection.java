@@ -6,9 +6,9 @@ import rf.yatzy.game.core.components.Die;
 /**
  * Created by rfreitas
  */
-public abstract class AbstractLowerSection {
+abstract class AbstractLowerSection {
 
-    public static int[] countFacesOccurrences(int[] faceOccurrences, DiceHash dice) {
+    protected static int[] countFacesOccurrences(int[] faceOccurrences, DiceHash dice) {
         for (Die die : dice.values()) {
             faceOccurrences[die.getFaceValue() - 1]++;
         }

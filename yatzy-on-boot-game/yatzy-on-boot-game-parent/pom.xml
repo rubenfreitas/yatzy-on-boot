@@ -15,13 +15,54 @@
         <org.springframework.version>4.2.0.RELEASE</org.springframework.version>
         <org.mockito.version>1.9.5</org.mockito.version>
         <junit.version>4.12</junit.version>
+
+        <plugin.maven.surefire.version>2.18.1</plugin.maven.surefire.version>
+        <plugin.maven.failsafe.version>2.18.1</plugin.maven.failsafe.version>
     </properties>
 
     <build>
-        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
-        <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
-        <outputDirectory>${basedir}/target/classes</outputDirectory>
-        <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
+        <!--<sourceDirectory>${basedir}/src/main/java</sourceDirectory>-->
+        <!--<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>-->
+        <!--<outputDirectory>${basedir}/target/classes</outputDirectory>-->
+        <!--<testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>-->
+
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>/src/main/resources</directory>-->
+            <!--</resource>-->
+        <!--</resources>-->
+
+        <!--<testResources>-->
+            <!--<testResource>-->
+                <!--<directory>/src/test/resources</directory>-->
+            <!--</testResource>-->
+        <!--</testResources>-->
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${plugin.maven.surefire.version}</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${plugin.maven.failsafe.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>${plugin.maven.surefire.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+        </plugins>
     </build>
 
     <dependencyManagement>
@@ -43,19 +84,16 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${org.springframework.version}</version>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-all</artifactId>
                 <version>${org.mockito.version}</version>
-                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -63,7 +101,7 @@
     <developers>
         <developer>
             <name>Rúben Freitas</name>
-            <url></url>
+            <url>https://github.com/rubenfreitas/yatzy-on-boot</url>
         </developer>
     </developers>
 
