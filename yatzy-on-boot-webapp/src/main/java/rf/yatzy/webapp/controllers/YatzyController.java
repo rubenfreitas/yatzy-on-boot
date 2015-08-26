@@ -10,6 +10,9 @@ import rf.yatzy.game.integration.score.YatzyTypes;
 
 import static java.util.EnumSet.allOf;
 
+/**
+ * Created by rfreitas
+ */
 @Controller
 @EnableAutoConfiguration
 public class YatzyController {

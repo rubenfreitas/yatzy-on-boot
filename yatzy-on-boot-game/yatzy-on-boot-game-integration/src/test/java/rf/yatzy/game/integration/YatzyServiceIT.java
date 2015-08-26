@@ -16,7 +16,7 @@ public class YatzyServiceIT extends AbstractIT {
 
     @Test
     public void shouldGenerateDiceHash() {
-        DiceHash diceHash = service.role();
+        DiceHash diceHash = service.roll();
 
         assertNotNull(diceHash);
     }

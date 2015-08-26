@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import rf.yatzy.game.core.config.YatzyOnBootGameCoreSpringConfig;
 
 /**
  * Created by rfreitas

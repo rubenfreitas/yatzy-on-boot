@@ -9,4 +9,6 @@ public interface RulesConfig {
 
     Rule getRule();
 
+    String getRuleName();
+
 }

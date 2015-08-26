@@ -16,17 +16,16 @@ public class YatzyService extends AbstractYatzyService {
     }
 
     public YatzyScore lockScore(YatzyScore yatzyScore) {
-        //TODO: clean score of the ones that didn't get locked
         yatzyScore.setLocked();
         return yatzyScore;
     }
 
-    public DiceHash role() {
+    public DiceHash roll() {
         return new DiceHash(generateNewDiceHash());
     }
 
-    public DiceHash reRole() {
-        return new DiceHash(generateNewDiceHash());
-    }
+    //TODO: reRoll method
+
+    //TODO: calculateBonus
 
 }

@@ -11,8 +11,6 @@
         <relativePath>../yatzy-on-boot-game-parent/pom.xml</relativePath>
     </parent>
 
-
-    <groupId>rf.yatzy</groupId>
     <artifactId>yatzy-on-boot-game-integration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -51,6 +49,11 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest.version}</version>
         </dependency>
     </dependencies>
 
