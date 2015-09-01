@@ -12,7 +12,7 @@ import rf.yatzy.game.integration.config.YatzyOnBootGameIntegrationSpringConfig;
  * Created by rfreitas
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes= YatzyOnBootGameIntegrationSpringConfig.class)
+@ContextConfiguration(classes=YatzyOnBootGameIntegrationSpringConfig.class)
 public abstract class AbstractIT {
 
     @Before

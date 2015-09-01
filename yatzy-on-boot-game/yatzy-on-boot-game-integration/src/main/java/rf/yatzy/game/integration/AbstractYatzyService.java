@@ -9,7 +9,7 @@ import java.util.HashMap;
 /**
  * Created by rfreitas
  */
-public class AbstractYatzyService {
+class AbstractYatzyService {
 
     @Autowired
     private Roller roller;

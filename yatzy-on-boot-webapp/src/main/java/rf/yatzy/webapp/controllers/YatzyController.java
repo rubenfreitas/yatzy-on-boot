@@ -1,10 +1,8 @@
 package rf.yatzy.webapp.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import rf.yatzy.game.integration.YatzyService;
 import rf.yatzy.game.integration.score.YatzyScoreBoard;
 import rf.yatzy.game.integration.score.YatzyTypes;
 
@@ -17,8 +15,7 @@ import static java.util.EnumSet.allOf;
 @EnableAutoConfiguration
 public class YatzyController {
 
-    @Autowired
-    YatzyService service;
+    //TODO: integrate game with views
 
     YatzyScoreBoard scoreBoard = new YatzyScoreBoard(allOf(YatzyTypes.class));
 
