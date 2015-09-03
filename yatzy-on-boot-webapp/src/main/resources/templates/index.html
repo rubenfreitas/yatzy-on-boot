@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Yatzy On Spring Boot</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -7,77 +7,9 @@
 <body>
     <table>
         <tbody>
-        <tr>
-            <td>One</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Two</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Three</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Four</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Five</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Six</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>Bonus</th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>Total</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>Pair</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Two Pair</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3 of a kind</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>4 of a kind</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Small Straight</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Large Straight</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Full House</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Chance</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Yatzy</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>Sum</th>
-            <th></th>
+        <tr th:each="score : ${scores}">
+            <td th:text="#{ones.row.label}"></td>
+            <td th:text="${score.value.score}"/>
         </tr>
         </tbody>
     </table>
