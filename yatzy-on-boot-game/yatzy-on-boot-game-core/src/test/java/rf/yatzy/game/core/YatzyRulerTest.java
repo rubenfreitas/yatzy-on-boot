@@ -1,7 +1,7 @@
 package rf.yatzy.game.core;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.mockito.InjectMocks;
 import rf.yatzy.game.core.components.DiceHash;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -15,7 +15,7 @@ import static rf.yatzy.game.core.fixtures.rules.RulesFixtures.testValidYatzyDice
  */
 public class YatzyRulerTest extends AbstractIT {
 
-    @Autowired
+    @InjectMocks
     YatzyRuler ruler;
 
     @Test

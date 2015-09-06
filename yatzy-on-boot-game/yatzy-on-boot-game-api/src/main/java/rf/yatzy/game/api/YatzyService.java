@@ -1,9 +1,9 @@
-package rf.yatzy.game.integration;
+package rf.yatzy.game.api;
 
 import org.springframework.stereotype.Service;
 import rf.yatzy.game.core.components.DiceHash;
-import rf.yatzy.game.integration.score.YatzyScore;
-import rf.yatzy.game.integration.score.YatzyScoreBoard;
+import rf.yatzy.game.api.score.YatzyScore;
+import rf.yatzy.game.api.score.YatzyScoreBoard;
 
 /**
  * Created by rfreitas

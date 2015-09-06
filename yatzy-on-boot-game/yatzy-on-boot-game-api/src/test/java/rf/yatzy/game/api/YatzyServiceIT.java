@@ -1,4 +1,4 @@
-package rf.yatzy.game.integration;
+package rf.yatzy.game.api;
 
 /**
  * Created by rfreitas

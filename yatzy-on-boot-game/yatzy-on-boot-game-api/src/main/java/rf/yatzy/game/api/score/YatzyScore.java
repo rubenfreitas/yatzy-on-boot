@@ -1,4 +1,4 @@
-package rf.yatzy.game.integration.score;
+package rf.yatzy.game.api.score;
 
 /**
  * Created by rfreitas

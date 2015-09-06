@@ -1,4 +1,4 @@
-package rf.yatzy.game.integration.config;
+package rf.yatzy.game.api.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * Created by rfreitas
  */
 @Configuration
-@ComponentScan("rf.yatzy.game.integration")
+@ComponentScan("rf.yatzy.game.api")
 public class YatzyOnBootGameIntegrationSpringConfig {
 }

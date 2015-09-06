@@ -1,4 +1,4 @@
-package rf.yatzy.game.integration;
+package rf.yatzy.game.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import rf.yatzy.game.core.components.Die;

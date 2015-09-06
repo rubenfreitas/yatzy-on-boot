@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import rf.yatzy.game.integration.score.YatzyScoreBoard;
-import rf.yatzy.game.integration.score.YatzyTypes;
+import rf.yatzy.game.api.score.YatzyScoreBoard;
+import rf.yatzy.game.api.score.YatzyTypes;
 
 import static java.util.EnumSet.allOf;
 
