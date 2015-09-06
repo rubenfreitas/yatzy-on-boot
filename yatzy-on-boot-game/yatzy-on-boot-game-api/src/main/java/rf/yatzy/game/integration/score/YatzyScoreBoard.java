@@ -12,6 +12,5 @@ public class YatzyScoreBoard extends HashMap<YatzyTypes, YatzyScore> {
         for(YatzyTypes type : yatzyScoreTypes) {
             super.put(type, new YatzyScore());
         }
-
     }
 }

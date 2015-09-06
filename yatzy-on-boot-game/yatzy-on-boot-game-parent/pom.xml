@@ -8,8 +8,8 @@
     <artifactId>yatzy-on-boot-game-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Yatzy on Boot Game Parent</name>
-    <description>Yatzy layer parent</description>
+    <name>Yatzy on Boot Game - PARENT</name>
+    <description>Yatzy Game parent</description>
 
     <properties>
         <springframework.version>4.2.0.RELEASE</springframework.version>

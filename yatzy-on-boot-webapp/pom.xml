@@ -29,7 +29,7 @@
 		<!-- YATZY GAME -->
 		<dependency>
 			<groupId>rf.yatzy</groupId>
-			<artifactId>yatzy-on-boot-game-integration</artifactId>
+			<artifactId>yatzy-on-boot-game-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 

@@ -1,9 +1,11 @@
 package rf.yatzy.game.core.components;
 
+import java.io.Serializable;
+
 /**
  * Created by rfreitas
  */
-public class Die {
+public class Die implements Serializable {
 
     private int faceValue;
 

@@ -13,6 +13,8 @@
 
     <artifactId>yatzy-on-boot-game-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>Yatzy on Boot Game - CORE</name>
+    <description>This is the CORE Yatzy layer</description>
 
     <dependencies>
         <!-- SPRING -->

@@ -1,12 +1,13 @@
 package rf.yatzy.game.core.components;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashMap;
 
 /**
  * Created by rfreitas
  */
-public class DiceHash {
+public class DiceHash implements Serializable {
 
     private HashMap<Integer, Die> diceHash;
 

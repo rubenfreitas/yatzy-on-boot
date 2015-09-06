@@ -16,8 +16,6 @@ import static java.util.EnumSet.allOf;
 @EnableAutoConfiguration
 public class YatzyController {
 
-    //TODO: integrate game with views
-
     private YatzyScoreBoard scoreBoard = new YatzyScoreBoard(allOf(YatzyTypes.class));
 
     @RequestMapping("/")

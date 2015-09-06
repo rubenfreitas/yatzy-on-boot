@@ -11,8 +11,10 @@
         <relativePath>../yatzy-on-boot-game-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>yatzy-on-boot-game-integration</artifactId>
+    <artifactId>yatzy-on-boot-game-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>Yatzy on Boot Game - API</name>
+    <description>This is the API Yatzy layer</description>
 
     <dependencies>
         <!-- YATZY GAME -->

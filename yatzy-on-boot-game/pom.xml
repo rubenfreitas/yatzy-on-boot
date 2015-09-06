@@ -15,11 +15,11 @@
   <artifactId>yatzy-on-boot-game</artifactId>
   <packaging>pom</packaging>
   <name>Yatzy on Boot Game</name>
-  <description>This is the Yatzy layer</description>
+  <description>This is Yatzy Game project</description>
 
   <modules>
     <module>yatzy-on-boot-game-parent</module>
     <module>yatzy-on-boot-game-core</module>
-    <module>yatzy-on-boot-game-integration</module>
+    <module>yatzy-on-boot-game-api</module>
   </modules>
 </project>
