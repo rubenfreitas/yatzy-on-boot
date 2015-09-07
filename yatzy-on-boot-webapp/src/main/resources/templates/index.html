@@ -3,7 +3,10 @@
 <head>
     <title>Yatzy On Spring Boot</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
 </head>
+
+    <div th:replace="fragments/header :: header">
 <body>
     <table>
         <tbody>
@@ -15,9 +18,9 @@
     </table>
 
     <div>
-        <button type="submit" name="roll">Roll Dices</button>
+        <button class="btn btn-default" type="submit" name="roll">Roll Dices</button>
     </div>
 
-    <div th:fragment="common/footer"/>
+    <div th:replace="fragments/footer :: footer" />
 </body>
 </html>
