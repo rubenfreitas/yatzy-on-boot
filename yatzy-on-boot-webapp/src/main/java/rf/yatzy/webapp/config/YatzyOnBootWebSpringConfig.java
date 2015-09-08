@@ -6,11 +6,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
-import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
-import static java.util.Locale.UK;
+import static rf.yatzy.webapp.config.AbstractYatzyOnBootWebSpringConfig.registryResources;
+import static rf.yatzy.webapp.config.AbstractYatzyOnBootWebSpringConfig.resolveDefaultLocale;
+import static rf.yatzy.webapp.config.AbstractYatzyOnBootWebSpringConfig.resolveLocaleChangeInterceptor;
 
 /**
  * Created by rfreitas
@@ -18,24 +20,25 @@ import static java.util.Locale.UK;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-public class YatzySpringConfig extends WebMvcConfigurerAdapter {
+public class YatzyOnBootWebSpringConfig extends WebMvcConfigurerAdapter {
 
     @Bean
     public LocaleResolver localeResolver() {
-        SessionLocaleResolver slr = new SessionLocaleResolver();
-        slr.setDefaultLocale(UK);
-        return slr;
+        return resolveDefaultLocale();
     }
 
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
-        LocaleChangeInterceptor lci = new LocaleChangeInterceptor();
-        lci.setParamName("lang");
-        return lci;
+        return resolveLocaleChangeInterceptor();
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registryResources(ResourcesConfigs.values(), registry);
     }
 }
