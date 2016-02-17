@@ -1,8 +1,11 @@
 # yatzy-on-boot
-Yatzy game implemented in JAVA + Spring Boot
+Yatzy game written in JAVA on top of Spring Boot
+
+## Why
+---
 
 ## Quick Start
-.....
+---
 
 ## Building and Running
 Build multi-project: 
