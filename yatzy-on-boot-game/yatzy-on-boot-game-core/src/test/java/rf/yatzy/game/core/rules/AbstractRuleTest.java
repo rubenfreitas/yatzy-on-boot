@@ -19,13 +19,13 @@ public abstract class AbstractRuleTest extends AbstractIT {
 
     private static final int ZERO_SUM = 0;
 
-    public abstract Rule getRule();
+    protected abstract Rule getRule();
 
-    public abstract DiceHash getValidHash();
+    protected abstract DiceHash getValidHash();
 
-    public abstract DiceHash getNotValidHash();
+    protected abstract DiceHash getNotValidHash();
 
-    public abstract int getTotalSum();
+    protected abstract int getTotalSum();
 
     @Test
     public void shouldHaveValidCombination(){

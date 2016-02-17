@@ -5,17 +5,17 @@ Yatzy game implemented in JAVA + Spring Boot
 .....
 
 ## Building and Running
-First:
-build multi-project: yatzy-on-boot-game
+Build multi-project: 
+        
+        yatzy-on-boot-game
 
 Then on yatzy-on-boot-webapp:
-mvn spring-boot:run
+
+        mvn spring-boot:run
 
 
 ## Tools
-Spring (latest)
-Maven 3
+Spring
+Maven
 JUnit
 Mockito
-
-IntelliJ Idea
