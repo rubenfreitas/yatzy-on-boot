@@ -1,7 +1,7 @@
 package rf.yatzy.game.core.rules.config;
 
 /**
- * Created by rfreitas on 22/08/2015.
+ * Created by rfreitas
  */
 public interface RulesConstants {
 

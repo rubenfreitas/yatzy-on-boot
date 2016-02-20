@@ -17,14 +17,28 @@ import rf.yatzy.game.core.rules.TwosRule;
 import rf.yatzy.game.core.rules.YatzyRule;
 import rf.yatzy.game.core.rules.config.Rule;
 
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 /**
  * Created by rfreitas
  */
 public enum RulesConfigs implements RulesConfig {
-    ONES(new OnesRule()), TWOS(new TwosRule()), THREES(new ThreesRule()), FOURS(new FoursRule()), FIVES(new FivesRule()), //
-    SIXES(new SixesRule()), YATZY(new YatzyRule()), CHANCE(new ChanceRule()), PAIR(new PairRule()), //
-    TWO_PAIR(new TwoPairRule()), THREE_OF_A_KIND(new ThreeOfAKindRule()), FULL_HOUSE(new FullHouseRule()), //
-    FOUR_OF_A_KIND(new FourOfAKindRule()), SMALL_STRAIGHTS(new SmallStraightRule()), LARGE_STRAIGHTS(new LargeStraightRule());
+    ONES(new OnesRule()),
+    TWOS(new TwosRule()),
+    THREES(new ThreesRule()),
+    FOURS(new FoursRule()),
+    FIVES(new FivesRule()),
+    SIXES(new SixesRule()),
+    YATZY(new YatzyRule()),
+    CHANCE(new ChanceRule()),
+    PAIR(new PairRule()),
+    TWO_PAIR(new TwoPairRule()),
+    THREE_OF_A_KIND(new ThreeOfAKindRule()),
+    FULL_HOUSE(new FullHouseRule()),
+    FOUR_OF_A_KIND(new FourOfAKindRule()),
+    SMALL_STRAIGHTS(new SmallStraightRule()),
+    LARGE_STRAIGHTS(new LargeStraightRule());
 
     private Rule rule;
 
@@ -38,5 +52,9 @@ public enum RulesConfigs implements RulesConfig {
 
     public String getRuleName() {
         return this.name();
+    }
+
+    public static Stream<RulesConfigs> stream() {
+        return Arrays.stream(RulesConfigs.values());
     }
 }
