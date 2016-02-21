@@ -16,8 +16,4 @@ public class Die implements Serializable {
     public int getFaceValue() {
         return faceValue;
     }
-
-    public void setFaceValue(int faceValue) {
-        this.faceValue = faceValue;
-    }
 }

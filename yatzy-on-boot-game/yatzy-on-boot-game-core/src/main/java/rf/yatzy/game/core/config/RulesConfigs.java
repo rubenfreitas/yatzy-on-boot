@@ -17,9 +17,6 @@ import rf.yatzy.game.core.rules.TwosRule;
 import rf.yatzy.game.core.rules.YatzyRule;
 import rf.yatzy.game.core.rules.config.Rule;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 /**
  * Created by rfreitas
  */
@@ -52,9 +49,5 @@ public enum RulesConfigs implements RulesConfig {
 
     public String getRuleName() {
         return this.name();
-    }
-
-    public static Stream<RulesConfigs> stream() {
-        return Arrays.stream(RulesConfigs.values());
     }
 }

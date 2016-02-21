@@ -12,7 +12,7 @@ public class ApplicableRules {
     private HashMap<String, RuleResult> applicableResults;
 
     public ApplicableRules(){
-        this.applicableResults = new HashMap<String, RuleResult>();
+        this.applicableResults = new HashMap<>();
     }
 
     public ApplicableRules(HashMap<String, RuleResult> applicableResults){

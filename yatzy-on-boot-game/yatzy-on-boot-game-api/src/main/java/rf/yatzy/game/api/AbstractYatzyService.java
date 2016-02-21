@@ -19,7 +19,7 @@ class AbstractYatzyService {
     }
 
     protected HashMap<Integer,Die> generateNewDiceHash() {
-        HashMap<Integer,Die> diceHash = new HashMap<Integer,Die>();
+        HashMap<Integer,Die> diceHash = new HashMap<>();
         for(int i = 1; i < 6; i++) {
             diceHash.put(i, new Die(getRoller().roll()));
         }

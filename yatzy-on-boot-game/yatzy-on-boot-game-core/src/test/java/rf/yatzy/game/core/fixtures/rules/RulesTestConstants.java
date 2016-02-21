@@ -64,5 +64,4 @@ public interface RulesTestConstants {
     int[] NOT_VALID_FULL_HOUSE_TEST = { 1, 6, 6, 4, 6 };
     int FULL_HOUSE_SCORE = 22;
 
-
 }
