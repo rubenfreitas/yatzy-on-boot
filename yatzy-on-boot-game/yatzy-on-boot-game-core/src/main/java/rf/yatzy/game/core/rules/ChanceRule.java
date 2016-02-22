@@ -5,6 +5,8 @@ import rf.yatzy.game.core.components.Die;
 import rf.yatzy.game.core.config.RuleResult;
 import rf.yatzy.game.core.rules.config.Rule;
 
+import java.util.Collection;
+
 import static java.lang.Boolean.TRUE;
 
 /**
@@ -13,10 +15,12 @@ import static java.lang.Boolean.TRUE;
 public class ChanceRule implements Rule {
 
     public RuleResult execute(DiceHash dice) {
-        int sum = 0;
-        for (Die die : dice.getAllDice()) {
-            sum += die.getFaceValue();
-        }
-        return new RuleResult(TRUE, sum);
+        return new RuleResult(TRUE, sum(dice.getAllDice()));
+    }
+
+    private int sum(Collection<Die> dice) {
+        return dice.stream()
+                .map(Die::getFaceValue)
+                .reduce(0, (sum, faceValue) -> sum + faceValue);
     }
 }
