@@ -17,7 +17,16 @@ abstract class AbstractUpperSectionRule {
         for (Die die : dice.getAllDice()) {
             if (die.getFaceValue() == value) { sum += value; }
         }
+
+//        int sum = dice.getAllDice()
+//                .parallelStream()
+//                .map(Die::getFaceValue)
+//                .filter(dieValue -> dieValue == value)
+//                .reduce(0, (sum, dieValue) -> sum += value);
+
+
         return createResult(sum == 0 ? FALSE : TRUE, sum);
+
     }
 
     private static RuleResult createResult(Boolean isValid, int sum) {
