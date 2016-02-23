@@ -12,8 +12,10 @@ public class Roller {
 
     private static int MAX = 6;
 
-    public int roll(){
-        return new Random().nextInt(MAX) + 1;
+    private static final Random RANDOMISE = new Random();
+
+    public Integer roll(){
+        return RANDOMISE.nextInt(MAX) + 1;
     }
 
 }

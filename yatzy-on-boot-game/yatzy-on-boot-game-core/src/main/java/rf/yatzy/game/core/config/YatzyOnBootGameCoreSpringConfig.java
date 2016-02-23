@@ -9,4 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("rf.yatzy.game.core")
 public class YatzyOnBootGameCoreSpringConfig {
+
+
 }

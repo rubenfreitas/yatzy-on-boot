@@ -15,10 +15,10 @@ public class YatzyRule extends AbstractLowerSectionRule implements Rule {
     private static final int YATZY_SCORE = 50;
 
     public RuleResult execute(DiceHash dice) {
-        return new RuleResult(hasYatzy(countFacesOccurrences(new int[6], dice)) ? TRUE : FALSE, YATZY_SCORE);
+        return new RuleResult(hasYatzy(countFacesOccurrences(new Integer[6], dice)) ? TRUE : FALSE, YATZY_SCORE);
     }
 
-    private boolean hasYatzy(int[] faceOccurrences) {
+    private boolean hasYatzy(Integer[] faceOccurrences) {
         for(int die : faceOccurrences) {
             if(die == 5) { return true; }
         }

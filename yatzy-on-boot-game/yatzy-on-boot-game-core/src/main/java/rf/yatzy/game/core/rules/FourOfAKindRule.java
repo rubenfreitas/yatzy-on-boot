@@ -13,7 +13,7 @@ import static java.lang.Boolean.TRUE;
 public class FourOfAKindRule extends AbstractLowerSectionRule implements Rule {
 
     public RuleResult execute(DiceHash dice) {
-        int[] faceOccurrences = countFacesOccurrences(new int[6], dice);
+        Integer[] faceOccurrences = countFacesOccurrences(new Integer[6], dice);
 
         int score = 0;
         for (int i = 6; i > 0; i--) {

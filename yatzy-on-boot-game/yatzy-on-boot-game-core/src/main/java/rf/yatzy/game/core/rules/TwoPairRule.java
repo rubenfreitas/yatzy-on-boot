@@ -13,7 +13,7 @@ import static java.lang.Boolean.TRUE;
 public class TwoPairRule extends AbstractLowerSectionRule implements Rule {
 
     public RuleResult execute(DiceHash dice) {
-        int[] faceOccurrences = countFacesOccurrences(new int[6], dice);
+        Integer[] faceOccurrences = countFacesOccurrences(new Integer[6], dice);
 
         int pairs = 0;
         int score = 0;

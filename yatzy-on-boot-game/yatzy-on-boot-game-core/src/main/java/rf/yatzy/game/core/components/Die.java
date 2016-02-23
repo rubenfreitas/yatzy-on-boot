@@ -7,13 +7,13 @@ import java.io.Serializable;
  */
 public class Die implements Serializable {
 
-    private int faceValue;
+    private Integer faceValue;
 
-    public Die(int faceValue) {
+    public Die(Integer faceValue) {
         this.faceValue = faceValue;
     }
 
-    public int getFaceValue() {
+    public Integer getFaceValue() {
         return faceValue;
     }
 }

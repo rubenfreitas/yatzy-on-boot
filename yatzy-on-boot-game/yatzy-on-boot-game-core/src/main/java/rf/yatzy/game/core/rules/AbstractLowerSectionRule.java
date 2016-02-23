@@ -8,7 +8,7 @@ import rf.yatzy.game.core.components.Die;
  */
 abstract class AbstractLowerSectionRule {
 
-    protected static int[] countFacesOccurrences(int[] faceOccurrences, DiceHash dice) {
+    protected static Integer[] countFacesOccurrences(Integer[] faceOccurrences, DiceHash dice) {
         for (Die die : dice.getAllDice()) {
             faceOccurrences[die.getFaceValue() - 1]++;
         }
