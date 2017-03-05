@@ -18,7 +18,7 @@ Then on yatzy-on-boot-webapp:
 
 
 ## Tools
-Spring
-Maven
-JUnit
-Mockito
+* Spring
+* Maven
+* JUnit
+* Mockito
